@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Nunito:ital,wght@1,300&family=Poppins:ital,wght@1,200&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <title>DojoWeather</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-content">
+            <h1>DojoWeather</h1>
+        <div class="cities">
+            <a href="#" onclick="alert('Loading weather report...')"><h3>Burbank</h3></a>
+            <a href="#" onclick="alert('Loading weather report...')"><h3>Chicago</h3></a>
+            <a href="#" onclick="alert('Loading weather report...')"><h3>Dallas</h3></a>
+        </div>
+        </div>
+    </div>
+
+    <div class="city">
+        <h2>San Jose</h2>
+        <div class="temperature-settings">
+            <label for="temperature">show temperature in</label>
+            <select name="temperature" id="temperature" onchange="convert()">
+                <option value="celsius">&#8451</option>
+                <option value="farenheit">&#8457</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="col-1">
+            <h3>Today</h3>
+            <img src="./some_rain.png" alt="some rain">
+            <p>some rain</p>
+            <div class="days-forecast">
+                <h3 id="temperatureHigh">24&#176</h3>
+                <h3 id="temperatureLow">18&#176</h3>
+            </div>
+        </div>
+
+        <div class="col-1">
+            <h3>Tomorrow</h3>
+            <img src="./some_sun.png" alt="some rain">
+            <p>some sun</p>
+            <div class="days-forecast">
+                <h3 id="temperatureHigh1">27&#176</h3>
+                <h3 id="temperatureLow1">19&#176</h3>
+            </div>
+        </div>
+
+        <div class="col-1">
+            <h3>Friday</h3>
+            <img src="./some_clouds.png" alt="some rain">
+            <p>some clouds</p>
+            <div class="days-forecast">
+                <h3 id="temperatureHigh2">21&#176</h3>
+                <h3 id="temperatureLow2">16&#176</h3>
+            </div>
+        </div>
+
+        <div class="col-1">
+            <h3>Saturday</h3>
+            <img src="./some_sun.png" alt="some rain">
+            <p>some sun</p>
+            <div class="days-forecast">
+                <h3 id="temperatureHigh3">26&#176</h3>
+                <h3 id="temperatureLow3">21&#176</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookies">
+        <img src="./cookie.png" alt="cookie">
+        <div class="cookie-info">
+            <h3><b>Stop! Cookie time</b></h3>
+            <p>We use cookies (sadly not the edible ones) to personalize <br> content and ads,
+                to provide soical media features and to <br> analyse our traffic. 
+                <a href="#">Read more...</a>
+            </p>
+        </div>
+        <button id="cookie-button">I Accept</button>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
